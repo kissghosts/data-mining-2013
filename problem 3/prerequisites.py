@@ -138,7 +138,7 @@ if __name__ == '__main__':
         help="string used for splitting each course, e.g. ',', "
         "default value is space")
     parser.add_argument('--ttoken', type=str, default=', ', 
-        help="string used for splitting each course, e.g. ',', "
+        help="string used for splitting each term, e.g. ',', "
         "default value is ', '")
     parser.add_argument('--mingap', type=int, default=0, help="mingap")
     parser.add_argument('--maxgap', type=int, default=3, help="maxgap, "
