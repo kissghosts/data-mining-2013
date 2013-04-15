@@ -1,0 +1,21 @@
+- A self-critical view on the results you provide would also be valuable. Are the results useful for the original problem? Why and how?
+- A systematic exploration of the effects of parameters is a good idea, to get a very rough overview of the behavior of the number of frequent itemsets. (As long as one doesn't forget to consider their contents...)
+- Experimenting is a good way to learn. It's a very good idea to also spend time on looking at the data and its simple statistics (number of students, number of courses, frequencies of courses, numbers of courses taken by students, etc.) to better understand what you are mining.
+- Formulating and writing the problem in your own words is good. It helps (you) to make sure you have understood the problem and (us) to know what your more specific aims are.
+- Getting an overview of the data is essential. You have made good use of simple statistics, distributions etc. here!
+- How about a self-critical view on the results? Are they useful?
+- It is very good that you pay attention to the contents of the patterns. This is the key to finding something useful.
+- It would have been interesting to learn more about your thoughts and conclusions from the contents of results. What do they tell as an answer to the problem? Is it a good answer? Or what kind of inherent issues are there with frequent itemsets in this application? What are "useful" itemsets? Are the itemsets redundant? How many students do they actually cover? A self-critical evaluation would also be welcome. Association rules partially address item 3, so you can investigate this idea further using them if you are interested.
+- Looking at the cover of the union of frequent patterns is an excellent idea! (Can you think of other ways to choose itemsets to the result, instead of picking most frequent ones?)
+- Splitting the data into separate subsets can be a good idea. But what are its effects on the analysis? For instance, if you removed students with at most two courses, and then looked for itemsets with at least three items, what changed? (Don't try it experimentally, but try to think about it first.)
+- Thanks for also giving concrete lists of results, this is an essential part of the problem!
+- Thanks for giving a concrete "solution" to the problem. Why did you choose these exact parameter values (support threshold, itemset length) or these results? What are the effects of these choices, e.g., what kind of potentially interesting patterns are lost?
+- Use of closed itemsets is a good idea, too...
+- Using maximal itemsets is a good idea (that's why they are in Problem #2). Using them already here is fine, if you feel you have explored frequent itemsets and their use sufficiently.
+- What are the eclat command line arguments and, more importantly, why did you use these specific values/arguments?
+- What are the eclat parameters and why did you use the specific values?
+- What are "useful" combinations of courses? (Points 2 and 3 actually go beyond the current problem and solution, and more to the issues and ideas for future work.)
+- What are your conclusions about the problem and your proposed answer to it at this phase?
+- What do you mean by "minimum frequent item sets"? "Minimal number of frequent itemsets", I presume.
+- When starting to mine data, getting an overview of the data is important. Using eclat -n1 gives frequencies of individual courses, and similar results for students could also be interesting, i.e., how many courses did students take. Perhaps some other simple statistics as well?
+- You write you didn't face any difficulties. How about the potentially huge numbers of itemsets? Their redundancy? Other issues with frequent itemsets in this application?

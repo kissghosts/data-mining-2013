@@ -1,0 +1,34 @@
+Apriori/Eclat:
+k = 1:
+programming_project (62.3907)
+computer_organization (50.354)
+introduction_to_unix (45.0229)
+information_systems (44.6064)
+data_structures (44.5231)
+concurrent_systems (44.4398)
+data_structures_project (44.1483)
+data_communications (43.3153)
+
+k = 2:
+computer_organization programming_project (45.7309)
+
+k = 3:
+information_systems computer_organization programming_project (39.9833)
+
+k = 4:
+computer_organization concurrent_systems data_structures_project programming_project (32.3615)
+data_structures concurrent_systems data_structures_project programming_project (31.0287)
+
+k = 5:
+information_systems computer_organization concurrent_systems data_structures_project programming_project (29.4461)
+
+k = 6:
+information_systems_project information_systems computer_organization concurrent_systems data_structures_project programming_project (25.3644)
+
+k = 12:
+programming_(pascal) information_systems_project database_systems_i scientific_writing introduction_to_unix programming_in_c data_structures programming_project information_systems computer_organization data_structures_project concurrent_systems (12.3698)
+
+k = 13:
+programming_(pascal) theory_of_computation programming_in_c introduction_to_unix scientific_writing data_structures database_systems_i information_systems_project programming_project data_structures_project concurrent_systems information_systems computer_organization (10.2457)
+
+no itemset found when k is larger than 13, and support is larger than 10%
