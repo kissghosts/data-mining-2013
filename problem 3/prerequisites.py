@@ -4,7 +4,7 @@ import sys
 import copy
 from sets import Set
 
-def support_counting(sequence, course, maxgap, sequences):
+def support_counting(sequence, course, maxgap, mingap, sequences):
     """calc support for sequence -> course
     """
 
@@ -13,7 +13,7 @@ def support_counting(sequence, course, maxgap, sequences):
         # set timing constraints
         for i in range(len(each_sequence)):
             if course in each_sequence[i]:
-                end = i
+                end = i - mingap
                 start = 0 if i < (maxgap - 1) else (i - maxgap -1)
                 break
 
@@ -177,7 +177,7 @@ if __name__ == '__main__':
 
             for x in range(len(sequence)):
                 if course in sequence[x]:
-                    end = x
+                    end = x - mingap
                     start = 0 if x < (maxgap - 1) else (x - maxgap -1)
                     break        
             
@@ -191,7 +191,7 @@ if __name__ == '__main__':
     frequent_sequences[1] = []
     for each in k1_items:
         if each != course:
-            sup = support_counting(each, course, maxgap, sequences) / count
+            sup = support_counting(each, course, maxgap, mingap, sequences) / count
             if sup > minsup:
                 frequent_sequences[1].append([[[each]], sup])
 
@@ -210,7 +210,7 @@ if __name__ == '__main__':
         candidates = gen_candidate(k_freq_sequences)
 
         for each in candidates:
-            sup = support_counting(each, course, maxgap, sequences) / count
+            sup = support_counting(each, course, maxgap, mingap, sequences) / count
             if sup > minsup:
                 frequent_sequences[n + 1].append([each, sup])
 
