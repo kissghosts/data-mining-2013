@@ -173,14 +173,19 @@ if __name__ == '__main__':
             for each in term:
                 str_list = each.split(args.ctoken)
                 sequence.append([int(c) for c in str_list])
-            sequences.append(sequence)
+            for each in sequence:
+                if course in each:
+                    sequences.append(sequence)
+                    break
+            else:
+                continue
 
             for x in range(len(sequence)):
                 if course in sequence[x]:
                     end = x - mingap
                     start = 0 if x < (maxgap - 1) else (x - maxgap -1)
                     break        
-            
+
             for i in range(start, end):
                 for each in sequence[i]:
                     if each not in k1_items:
